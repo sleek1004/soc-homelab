@@ -50,7 +50,7 @@ The PAM session rules (5501 / 5502) fire on **every** login and sudo, twice per 
 I wrote a custom local rule overriding rules 5501 and 5502 to **level 0**, meaning the events are still decoded and logged, but no longer raised as alerts. This is tuning, not deletion: nothing is lost, the noise is simply silenced.
 
 ```xml
-<rule id="100010" level="0">
+<rule id="100001" level="0">
   <if_sid>5501</if_sid>
   <description>Tuned: PAM session opened on local benign activity, silenced to reduce alert fatigue</description>
 </rule>
