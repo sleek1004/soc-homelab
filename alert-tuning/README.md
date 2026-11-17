@@ -101,3 +101,19 @@ Routine session noise was silenced while meaningful security events (authenticat
 ---
 
 *Built as a hands-on lab to demonstrate practical SOC and detection-engineering skills.*
+
+
+## Evidence
+
+### Baseline: 14 alerts from benign activity, broken down by rule
+![Rule breakdown](rule-breakdown.JPG)
+
+### The custom tuning rule
+![Tuning rule](tuning-rule.JPG)
+
+### Offline validation (rule fires at level 0)
+![Logtest validation](logtest-validation.JPG)
+
+### After tuning: 2 alerts from identical activity
+![After tuning](after-tuning.JPG)
+
